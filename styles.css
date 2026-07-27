@@ -132,11 +132,29 @@ header.site {
   max-width: 640px;
 }
 
-.hero .description {
-  font-size: 1.05rem;
-  color: var(--ink-soft);
-  max-width: 560px;
+.hero-benefits {
+  list-style: none;
   margin: 0 auto 32px;
+  padding: 0;
+  max-width: 520px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+}
+
+.hero-benefits li {
+  display: flex;
+  gap: 10px;
+  font-size: 1rem;
+  color: var(--ink-soft);
+}
+
+.hero-benefits li::before {
+  content: "✓";
+  color: var(--accent);
+  font-weight: 700;
+  flex: none;
 }
 
 .hero-actions {
