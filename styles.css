@@ -162,7 +162,13 @@ header.site {
   gap: 14px;
   justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 56px;
+  margin-bottom: 20px;
+}
+
+.hero-note {
+  font-size: 0.9rem;
+  color: var(--ink-faint);
+  margin: 0 auto 40px;
 }
 
 .btn {
@@ -180,8 +186,10 @@ header.site {
 .btn-primary {
   background: var(--ink);
   color: #fff;
-  opacity: 0.55;
-  cursor: default;
+}
+
+.btn-primary:hover {
+  opacity: 0.85;
 }
 
 .btn-secondary {
