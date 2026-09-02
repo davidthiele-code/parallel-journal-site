@@ -383,9 +383,9 @@ section.feature {
 
 .pricing-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
-  max-width: 780px;
+  max-width: 1040px;
   margin: 0 auto;
 }
 
@@ -493,6 +493,54 @@ section.feature {
   margin: 14px 0 0;
   color: var(--ink-soft);
   font-size: 0.95rem;
+}
+
+/* Testimonial */
+
+.testimonial {
+  max-width: 720px;
+  margin: 56px auto 0;
+  padding: 32px;
+  background: var(--card-solid);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.testimonial-quote {
+  flex: 1;
+  min-width: 240px;
+}
+
+.testimonial-quote p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin: 0 0 12px;
+  color: var(--ink);
+}
+
+.testimonial-quote footer {
+  font-size: 0.9rem;
+  color: var(--ink-faint);
+  font-weight: 600;
+}
+
+.testimonial-proof {
+  flex: none;
+  width: 160px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.testimonial-proof img {
+  width: 100%;
+  display: block;
 }
 
 /* Footer */
