@@ -56,6 +56,86 @@
     </div>
   </section>
 
+  <!--
+    Black Friday 2026 offer.
+    PRE-LAUNCH: this section is `hidden` so nothing shows while placeholders remain.
+    GO-LIVE: fill every token wrapped in double curly braces below (grep the file for two opening braces), then remove the `hidden` attribute.
+    EXPIRY: the script after the section removes it once data-ends has passed
+    (2026-12-01T08:00:00Z = end of Cyber Monday, Nov 30, Pacific time). Adjust if the App Store offer ends at a different time.
+    Two separate one-time offers; do not describe them as a bundle.
+  -->
+  <section class="feature" id="black-friday" data-ends="2026-12-01T08:00:00Z" hidden>
+    <div class="wrap">
+      <div class="promo-panel">
+        <div class="section-header">
+          <span class="eyebrow">Black Friday 2026</span>
+          <h2>Make space for better reflection this Black Friday</h2>
+          <p>Parallel is private by design — your journal stays on your devices and in your own iCloud, with no account to create. Through Cyber Monday, two optional unlocks are available at a special price. Both are one-time purchases. No subscription.</p>
+        </div>
+
+        <div class="promo-grid">
+          <div class="price-card">
+            <h3>AI Reflection Companion</h3>
+            <div class="price">
+              <span class="price-was"><span class="sr-only">Regular price </span><s>$6.99</s></span>
+              <span class="sr-only">Offer price </span>$4.99 <small>one-time</small>
+            </div>
+            <p class="note">Works alongside Personal Journaling or Relationship Mode.</p>
+            <p class="promo-blurb">Set up a reflection assistant in your own ChatGPT, Claude, or Gemini account and bring your entries in for honest reflection.</p>
+            <ul>
+              <li>A ready-to-use reflection prompt, plus setup guides for ChatGPT, Claude &amp; Gemini</li>
+              <li>One-tap &quot;Copy This Entry,&quot; formatted with mood and partner tags</li>
+              <li>Runs in your own AI account — Parallel doesn't host any AI</li>
+            </ul>
+            <div class="promo-cta">
+              <a class="btn btn-primary" href="https://apps.apple.com/redeem?ctx=offercodes&amp;id=6790966807&amp;code=PARALLELBF26" target="_blank" rel="noopener" aria-label="Get the AI Reflection Companion offer">Get the offer</a>
+            </div>
+          </div>
+
+          <div class="price-card highlight">
+            <h3>Relationship Mode: Unlimited Partners</h3>
+            <div class="price">
+              <span class="price-was"><span class="sr-only">Regular price </span><s>$5.99</s></span>
+              <span class="sr-only">Offer price </span>$3.99 <small>one-time</small>
+            </div>
+            <p class="note">Your first partner is always free. This unlocks unlimited partners.</p>
+            <p class="promo-blurb">Keep every person in your dating life organized on their own terms, without mixing stories together.</p>
+            <ul>
+              <li>Unlimited partner profiles, each with their own timeline</li>
+              <li>Agreements, boundaries, and private notes per relationship</li>
+              <li>Check-in history and relationship duration at a glance</li>
+            </ul>
+            <div class="promo-cta">
+              <a class="btn btn-primary" href="https://apps.apple.com/redeem?ctx=offercodes&amp;id=6790966807&amp;code=RELATIONSHIPBF26" target="_blank" rel="noopener" aria-label="Get the Relationship Mode: Unlimited Partners offer">Get the offer</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="promo-redeem">
+          <h3>How to redeem</h3>
+          <ol class="promo-steps">
+            <li><span>Install or update Parallel Journal on your iPhone, iPad, or Mac.</span></li>
+            <li><span>Tap <strong>Get the offer</strong> on the unlock you want. It opens in the App Store.</span></li>
+            <li><span>Follow the App Store prompts to confirm with your Apple ID.</span></li>
+            <li><span>Open Parallel. If your unlock doesn't appear right away, use <strong>Restore Purchases</strong> in Settings.</span></li>
+          </ol>
+          <div class="promo-help">
+            <h3>App Store didn't open?</h3>
+            <p>If you're viewing this inside Instagram, TikTok, or another app's built-in browser, the offer may not be able to open the App Store. Tap the <strong>⋯</strong> or share button and choose <strong>Open in Safari</strong> (or <strong>Open in browser</strong> — the wording varies by app), then tap <strong>Get the offer</strong> again.</p>
+          </div>
+          <p class="promo-fineprint">Offers available through Cyber Monday, November 30, 2026. Each offer can be redeemed once per customer.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    // Remove the Black Friday offer once the promotion window has closed.
+    (function () {
+      var s = document.getElementById('black-friday');
+      if (s && Date.now() >= Date.parse(s.getAttribute('data-ends'))) { s.remove(); }
+    })();
+  </script>
+
   <section class="feature" id="journaling">
     <div class="wrap feature-grid">
       <div>
