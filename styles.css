@@ -679,27 +679,6 @@ section.feature {
   cursor: pointer;
 }
 
-.promo-help {
-  margin: 28px auto 0;
-  padding: 16px 20px;
-  border-radius: var(--radius-md);
-  background: rgba(91, 124, 240, 0.08);
-  border: 1px solid rgba(91, 124, 240, 0.18);
-  font-size: 0.9rem;
-  color: var(--ink-soft);
-}
-
-.promo-help h3 {
-  margin: 0 0 6px;
-  font-size: 0.95rem;
-  text-align: left;
-  color: var(--ink);
-}
-
-.promo-help p {
-  margin: 0;
-}
-
 .promo-fineprint {
   margin: 28px auto 0;
   max-width: 560px;
